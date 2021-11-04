@@ -1,0 +1,147 @@
+nav {
+  display: flex;
+}
+.container{
+  display: flex;
+}
+@media (max-width: 350px){
+
+}
+
+#background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( #000033, #0000aa, #2222ff, #0c1788, #112470);
+}
+
+#horizon {
+  top: 50%;
+  position: fixed;
+  width: 100%;
+  height:0.7%;
+  background: linear-gradient(#000066,#111188, #1122ff);
+}
+
+.stars {
+  position: fixed;
+  background-color: white;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+#star1 {
+  top: 30%;
+  left: 30%;
+  animation-name: twinkle1;
+  animation-duration: 1s;
+}
+#star2 {
+  top: 15%;
+  left: 60%;
+  animation-name: twinkle1;
+  animation-duration: 1.5s;
+}
+#star3 {
+  top: 25%;
+  left: 50%;
+  animation-name: twinkle1;
+  animation-duration: 1.7s;
+}
+#star4 {
+  top: 20%;
+  left: 10%;
+  animation-name: twinkle1;
+  animation-duration: 2.3s;
+}
+#star5 {
+  top: 10%;
+  left: 40%;
+  animation-name: twinkle1;
+  animation-duration: 1.3s;
+}
+#moon {
+  top: 25%;
+  left: 72%;
+  /* animation-name: twinkle1; */
+  width: 115px;
+  height: 115px;
+  font-style: italic;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+}
+#island {
+  position: absolute;
+  top: 60%;
+  left: 82%;
+  transform: translate(-50% -50%);
+  width: 300px;
+  height: 80px;
+  border-radius: 100px 100px 0 0;
+  background-color: rgb(44, 28, 7);
+  box-shadow: 15px 10px 20px 10px #1b1003;
+}
+
+#tree {
+  position: absolute;
+  top: 35%;
+  left: 90%;
+  width: 10px;
+  height: 200px;
+  background-color: rgb(44, 28, 7);
+  transform: rotate(-20deg);
+  border-radius: 140%;
+}
+#leaf1 {
+  position: absolute;
+  transform: rotate(185deg);
+  width: 120px;
+  height: 50px;
+  top: 35%;
+  left: 88%;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #225522;
+}
+#leaf2 {
+  position: absolute;
+  transform: rotate(195deg);
+  width: 110px;
+  height: 50px;
+  top: 35%;
+  left: 80%;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 20px 15px 0 0 #225522;
+}
+#leaf3 {
+  position: absolute;
+  transform: rotate(143deg);
+  width: 110px;
+  height: 50px;
+  top: 27%;
+  left: 87%;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 20px 15px 0 0 #225522;
+}
+#leaf4 {
+  position: absolute;
+  transform: rotate(140deg);
+  width: 110px;
+  height: 50px;
+  top: 35%;
+  left: 84%;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 20px 15px 0 0 #225522;
+}
+
+@keyframes twinkle1 {
+  20% {
+    transform: scale(0.5);
+  }
+}
